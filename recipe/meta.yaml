@@ -18,7 +18,7 @@ source:
     - lpsolve_include_prefix.patch
 
 build:
-  number: 0
+  number: 1000
   script: "{{ PYTHON }} -m pip install extra/Python -vv"
 
 requirements:

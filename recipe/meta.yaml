@@ -6,19 +6,10 @@ package:
 
 source:
   git_url: https://github.com/chandu-atina/lp_solve_python_3x.git
-  git_rev: 3d6ed38d8c3cfb63a281f2cd74ec23d97131351c
-  patches:
-    # https://github.com/chandu-atina/lp_solve_python_3x/pull/2
-    - sitedir.patch
-
-    # ftbfs on osx
-    - malloc.patch
-
-    # specific include prefix in conda-forge
-    - lpsolve_include_prefix.patch
+  git_rev: 0b42fcd248a6b8b40e5f43ab759904a1f47720d4
 
 build:
-  number: 1000
+  number: 1001
   script: "{{ PYTHON }} -m pip install extra/Python -vv"
 
 requirements:

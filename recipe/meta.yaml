@@ -9,7 +9,7 @@ source:
   git_rev: 0b42fcd248a6b8b40e5f43ab759904a1f47720d4
 
 build:
-  number: 1001
+  number: 1002
   script: "{{ PYTHON }} -m pip install extra/Python -vv"
 
 requirements:

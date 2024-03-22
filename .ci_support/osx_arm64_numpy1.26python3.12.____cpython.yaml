@@ -23,3 +23,7 @@ target_platform:
 zip_keys:
 - - python
   - numpy
+
+CONDA_BUILD_SYSROOT:
+- /Users/timpalpant/src/desres-msys-feedstock/SDKs/MacOSX11.0.sdk
+

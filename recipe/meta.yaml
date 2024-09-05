@@ -9,7 +9,7 @@ source:
   git_rev: 0b42fcd248a6b8b40e5f43ab759904a1f47720d4
 
 build:
-  number: 1007
+  number: 1008
   script: "{{ PYTHON }} -m pip install extra/Python -vv"
 
 requirements:
@@ -18,6 +18,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - pip
     - python
